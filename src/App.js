@@ -161,7 +161,7 @@ class App extends Component {
             <div
               className="box"
               style={{
-                backgroundImage: `url(${boxthree})`,
+                backgroundImage: `url(${boxfour})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
@@ -172,7 +172,7 @@ class App extends Component {
             <div
               className="box"
               style={{
-                backgroundImage: `url(${boxfour})`,
+                backgroundImage: `url(${boxthree})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
