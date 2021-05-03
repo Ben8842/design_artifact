@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import Background from "./img/buildingback.jpg";
 import logodark from "./img/logodark.png";
 import logolight from "./img/logolight.png";
+import logohover from "./img/logohover.png";
 import menu from "./img/menu.png";
 import close from "./img/close.png";
 import title from "./img/title.png";
@@ -191,8 +192,6 @@ class App extends Component {
           </Container>
         </div>
         <div className="footer">
-          <h1>FOOTER</h1>
-
           <div className="leftfooter">
             <h6>South Carolina</h6>
             <h6>Revenue and Fiscal Affairs Office</h6>
@@ -207,30 +206,18 @@ class App extends Component {
             ></div>
           </div>
           <div className="middlefooter">
-            <h6>South Carolina</h6>
-            <h6>Revenue and Fiscal Affairs Office</h6>
-            <div
-              className="logodark"
-              style={{
-                backgroundImage: `url(${logodark})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-            ></div>
+            <h6>Privacy Statement</h6>
+            <h6>FOIA</h6>
+            <h6>Disclosures and Reporting</h6>
+            <h6>Report Fraud</h6>
+            <h6>Accessibility</h6>
+            <h6>Contact Us</h6>
           </div>
           <div className="rightfooter">
-            <h6>South Carolina</h6>
-            <h6>Revenue and Fiscal Affairs Office</h6>
-            <div
-              className="logodark"
-              style={{
-                backgroundImage: `url(${logodark})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-            ></div>
+            <h6>MAIN OFFICE</h6>
+            <h6>GEODETIC SURVEY SECTION</h6>
+            <h6>Disclosures and Reporting</h6>
+            <h6>HEALTH AND DEMOGRAPHICS DIVISION</h6>
           </div>
         </div>
       </div>
