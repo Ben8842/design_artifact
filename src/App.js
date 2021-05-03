@@ -22,14 +22,44 @@ class App extends Component {
     this.state = {
       menu: false,
     };
+    console.log(menu);
+  }
+
+  togglemenu() {
+    console.log("hello toggle");
+    if (this.state.menu === true) {
+      this.setState({ menu: false });
+    } else if (this.state.menu === false) {
+      this.setState({ menu: true });
+    }
+    console.log(this.state.menu);
   }
 
   render() {
+    const menuextended = (
+      <div className="header">
+        <div className="left">
+          <div> Home</div>
+          <div>News & Events</div>
+          <div> About Us</div>
+          <div>Contact Us</div>
+          <div>Boards & Committees</div>
+        </div>
+        <div className="right">
+          <div>DATA & RESEARCH</div>
+          <div>LEGISLATIVE FISCAL IMPACTS</div>
+          <div>GEOGRAPHY & MAPPING</div>
+          <div>PROGRAMS & SERVICES</div>
+        </div>
+      </div>
+    );
+
     return (
       <div className="App">
         <div className="header">
           <div className="left">
-            <div
+            <button
+              onClick={() => this.togglemenu()}
               className="menu"
               style={{
                 backgroundImage: `url(${menu})`,
@@ -37,7 +67,7 @@ class App extends Component {
                 backgroundPosition: "center",
                 backgroundSize: "cover",
               }}
-            ></div>
+            ></button>
             <div
               className="logo"
               style={{
@@ -72,6 +102,8 @@ class App extends Component {
             ></div>
           </div>
         </div>
+        {this.state.menu ? menuextended : null}
+
         <div
           className="searchbanner"
           style={{
