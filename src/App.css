@@ -2,6 +2,49 @@
   text-align: center;
 }
 
+h6 {
+  color: white;
+}
+
+.searchbanner {
+  height: 200px;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: -2;
+}
+
+.primary {
+  color: black;
+  background-color: #e1e5ea;
+  height: 400px;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: -2;
+}
+
+.mainlinks {
+  color: black;
+  background-color: white;
+  height: 400px;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: -2;
+}
+
+.footer {
+  color: white;
+  background-color: #225089;
+  height: 400px;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: -2;
+}
+
+#searchfield {
+  padding: 10px;
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
