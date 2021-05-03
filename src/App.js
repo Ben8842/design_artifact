@@ -8,6 +8,10 @@ import menu from "./img/menu.png";
 import close from "./img/close.png";
 import title from "./img/title.png";
 import glass from "./img/glass.png";
+import boxone from "./img/boxdataresearch.png";
+import boxtwo from "./img/boxgeography.png";
+import boxthree from "./img/boxlegislative.png";
+import boxfour from "./img/boxprograms.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "reactstrap";
 
@@ -87,7 +91,50 @@ class App extends Component {
           </Col>
         </div>
         <div className="primary">
-          <h1>BOX BUTTONS</h1>
+          <button className="boxbutton">
+            <div
+              className="box"
+              style={{
+                backgroundImage: `url(${boxone})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </button>
+          <button className="boxbutton">
+            <div
+              className="box"
+              style={{
+                backgroundImage: `url(${boxtwo})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </button>
+          <button className="boxbutton">
+            <div
+              className="box"
+              style={{
+                backgroundImage: `url(${boxthree})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </button>
+          <button className="boxbutton">
+            <div
+              className="box"
+              style={{
+                backgroundImage: `url(${boxfour})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </button>
         </div>
         <div className="mainlinks">
           <h2>POPULAR SERVICES AND LINKS</h2>
