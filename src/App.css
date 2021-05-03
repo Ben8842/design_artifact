@@ -92,6 +92,20 @@ h6 {
   height: 50px;
 }
 
+.searching {
+  height: 30px;
+  width: 75px;
+  padding: 10px;
+  text-align: center;
+}
+
+#search {
+  height: auto;
+  width: auto;
+  outline: none;
+  text-align: center;
+  color: blue;
+}
 ul {
   list-style-type: none;
 }
@@ -181,6 +195,21 @@ ul {
 
   ul {
     list-style-type: none;
+  }
+
+  .searching {
+    height: 30px;
+    width: 75px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #search {
+    height: auto;
+    width: auto;
+    outline: none;
+    text-align: center;
+    color: blue;
   }
 
   .searchbanner {

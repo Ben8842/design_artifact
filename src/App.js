@@ -13,6 +13,7 @@ import boxone from "./img/boxdataresearch.png";
 import boxtwo from "./img/boxgeography.png";
 import boxthree from "./img/boxlegislative.png";
 import boxfour from "./img/boxprograms.png";
+import search from "./img/search.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "reactstrap";
 
@@ -119,8 +120,18 @@ class App extends Component {
           </h6>
 
           <Col>
-            <input id="searchfield"></input>
-            <button id="search">SEARCH</button>
+            <input id="searchfield" placeholder="Search rfa.sc.gov"></input>
+            <button id="search">
+              <div
+                className="searching"
+                style={{
+                  backgroundImage: `url(${search})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              ></div>
+            </button>
           </Col>
         </div>
         <div className="primary">
