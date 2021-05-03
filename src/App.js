@@ -8,7 +8,8 @@ import menu from "./img/menu.png";
 import close from "./img/close.png";
 import title from "./img/title.png";
 import glass from "./img/glass.png";
-import { Row, Col, Button } from "reactstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col, Button } from "reactstrap";
 
 class App extends Component {
   constructor(props) {
@@ -80,7 +81,6 @@ class App extends Component {
             informed policy decisions and administration of services
           </h6>
 
-          <Col md="9" sm="0"></Col>
           <Col>
             <input id="searchfield"></input>
             <button id="search">SEARCH</button>
@@ -90,10 +90,101 @@ class App extends Component {
           <h1>BOX BUTTONS</h1>
         </div>
         <div className="mainlinks">
-          <h1>MAINLINKS</h1>
+          <h2>POPULAR SERVICES AND LINKS</h2>
+          <Row xs="1" sm="1" md="3" lg="3">
+            <Col>
+              <ul>
+                <li>Overview and History of the South Carolina State Budget</li>
+                <li>Overview and History of the South Carolina State Budget</li>
+                <li>Overview and History of the South Carolina State Budget</li>
+              </ul>
+            </Col>
+            <Col>
+              <ul>
+                <li>Overview and History of the South Carolina State Budget</li>
+                <li>Overview and History of the South Carolina State Budget</li>
+                <li>Overview and History of the South Carolina State Budget</li>
+              </ul>
+            </Col>
+            <Col>
+              <ul>
+                <li>Overview and History of the South Carolina State Budget</li>
+                <li>Overview and History of the South Carolina State Budget</li>
+                <li>Overview and History of the South Carolina State Budget</li>
+              </ul>
+            </Col>
+          </Row>
+
+          <Container>
+            <Row xs="1" sm="2" md="2" lg="2">
+              <Col>
+                <h3>Recent Updates</h3>
+                <ul class="no-bullets">
+                  <li>Local Government Finance</li>
+                  <li>Transportation Network Carrier Maps</li>
+                  <li>BEA Long-Range General Fund Revenue Plan</li>
+                  <li>Budget Development</li>
+                  <li>November 2019 General FUnd Revenue Digest</li>
+                  <Button>VIEW MORE</Button>
+                </ul>
+              </Col>
+
+              <Col>
+                <h3>Calendar Events</h3>
+                <ul className="no-bullets">
+                  <li>Board of Economic Advisors Meeting</li>
+                  <li>Board of Economic Advisors Meeting</li>
+                  <li>Board of Economic Advisors Meeting</li>
+                  <li>Board of Economic Advisors Meeting</li>
+
+                  <Button>VIEW ALL EVENTS</Button>
+                </ul>
+              </Col>
+            </Row>
+          </Container>
         </div>
         <div className="footer">
           <h1>FOOTER</h1>
+
+          <div className="leftfooter">
+            <h6>South Carolina</h6>
+            <h6>Revenue and Fiscal Affairs Office</h6>
+            <div
+              className="logodark"
+              style={{
+                backgroundImage: `url(${logodark})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </div>
+          <div className="middlefooter">
+            <h6>South Carolina</h6>
+            <h6>Revenue and Fiscal Affairs Office</h6>
+            <div
+              className="logodark"
+              style={{
+                backgroundImage: `url(${logodark})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </div>
+          <div className="rightfooter">
+            <h6>South Carolina</h6>
+            <h6>Revenue and Fiscal Affairs Office</h6>
+            <div
+              className="logodark"
+              style={{
+                backgroundImage: `url(${logodark})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </div>
         </div>
       </div>
     );
