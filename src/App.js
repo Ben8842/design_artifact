@@ -4,6 +4,10 @@ import React, { Component } from "react";
 import Background from "./img/buildingback.jpg";
 import logodark from "./img/logodark.png";
 import logolight from "./img/logolight.png";
+import menu from "./img/menu.png";
+import close from "./img/close.png";
+import title from "./img/title.png";
+import glass from "./img/glass.png";
 import { Row, Col, Button } from "reactstrap";
 
 class App extends Component {
@@ -18,10 +22,51 @@ class App extends Component {
     return (
       <div className="App">
         <div className="header">
-          <h1>header</h1>
+          <div className="left">
+            <div
+              className="menu"
+              style={{
+                backgroundImage: `url(${menu})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+            <div
+              className="logo"
+              style={{
+                backgroundImage: `url(${logolight})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+            <div
+              className="title"
+              style={{
+                backgroundImage: `url(${title})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </div>
+          <div className="right">
+            <div className="rightlink">ABOUT US</div>
+            <div className="rightlink">EVENTS</div>
+            <div className="rightlink">BOARDS & COMMITTEES</div>
+            <div
+              className="glass"
+              style={{
+                backgroundImage: `url(${glass})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
+          </div>
         </div>
         <div
-          id="about"
           className="searchbanner"
           style={{
             backgroundImage: `url(${Background})`,
